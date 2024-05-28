@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmit</title>
+  <link rel="stylesheet" href="/css/visual.css">
+  <style>
+    /* Certifique-se que o mapa ocupa o espaço desejado */
+    .map-container {
+      height: 400px; /* Ajuste a altura conforme necessário */
+      width: 100%;
+      margin: 0 auto;
+    }
+    #map {
+      height: 100%;
+      width: 100%;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Marmit</h1>
+    <div class="search-box">
+      <button id="searchButton">Pesquisar</button>
+      
+    </div>
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+    <a href="/cadastro" class="signup-link">Não está no mapa? Cadastre-se!</a>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqS7oe9Z5NafvdZfAj8d0KKtWrtCekLAs&callback=initMap&libraries=places" async defer></script>
+  <script src="map.js"></script>
+</body>
+</html>
